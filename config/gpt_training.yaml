@@ -1,0 +1,51 @@
+seed: 42
+
+name: gpt
+mode: train
+save_dir: checkpoint_gpt/
+predict_file_path: prediction_test.jsonl
+
+model:
+    #path: skt/ko-gpt-trinity-1.2B-v0.5
+    path: openai-community/gpt2-xl
+    load_fp16: False
+    num_beams: 2
+    generator:
+        #path: skt/ko-gpt-trinity-1.2B-v0.5
+        path: openai-community/gpt2-xl
+optimizer:
+    lr: 1e-5
+
+tokenizer:
+    #path: skt/ko-gpt-trinity-1.2B-v0.5
+    path: openai-community/gpt2-xl
+
+
+datamodule:
+    batch_size: 8
+    shuffle: false
+    num_workers: 4
+
+    data_dir: data/camRest676_annotated/
+    train_data: training.jsonl
+    valid_data: valid.jsonl
+    test_data: test.jsonl
+    label_file: ''
+    
+    check_length: false
+    max_source_length: 80
+    max_target_length: 30 
+    
+    prompt_prefix: ''
+    prompt_suffix: ''
+    task_prompt: ''
+
+agent:
+    epochs: 1000
+    patience: 5
+    model_all_save: false
+    predict_after_all_training: false
+    predict_after_training: true
+
+print_config: true
+

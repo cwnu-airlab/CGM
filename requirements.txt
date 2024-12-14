@@ -1,0 +1,9 @@
+torch==1.10.1
+tqdm==4.66.2
+transformers==4.42.3
+
+pandas
+numpy
+PyYAML
+omegaconf
+hydra
