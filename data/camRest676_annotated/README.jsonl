@@ -1,0 +1,31 @@
+We conducted experiments using the following datasets.
+
+- CamRest676_annotated.json: the new annotated dataset for generative ellipsis and co-reference resolution research for task-oriented dialogue.
+  - We divided newly annotated `CamRest676_annotated.jsonl` from following paper into three parts (training, valid, test): 
+
+"GECOR: An End-to-End Generative Ellipsis and Co-reference Resolution Model for Task-Oriented Dialogue" 
+(Jun Quan, Deyi Xiong, Bonnie Webber and Changjian Hu. EMNLP, 2019)
+@inproceedings{Quan2019GECORAE,
+  title={GECOR: An End-to-End Generative Ellipsis and Co-reference Resolution Model for Task-Oriented Dialogue},
+  author={Jun Quan and Deyi Xiong and Bonnie Lynn Webber and Changjian Hu},
+  booktitle={Conference on Empirical Methods in Natural Language Processing},
+  year={2019},
+  url={https://api.semanticscholar.org/CorpusID:202769494}
+}
+
+For the original CamRest676 dataset, please cite the following papers:
+@article{wenN2N16,
+       Author = {Wen, Tsung-Hsien and Vandyke, David and Mrk{\v{s}}i\'c, Nikola and Ga{\v{s}}i\'c, Milica and M. Rojas-Barahona, Lina and Su, Pei-Hao and Ultes, Stefan and Young, Steve},
+       title={A Network-based End-to-End Trainable Task-oriented Dialogue System},
+       journal={arXiv preprint: 1604.04562},
+       year={2016},
+       month={April}
+}
+
+@article{wencond16,
+       Author = {Wen, Tsung-Hsien and Ga{\v{s}}i\'c, Milica and Mrk{\v{s}}i\'c, Nikola and M. Rojas-Barahona, Lina and Su, Pei-Hao and Ultes, Stefan and Vandyke, David and Young, Steve},
+       title={Conditional Generation and Snapshot Learning in Neural Dialogue Systems},
+       journal={arXiv preprint: 1606.03352},
+       year={2016},
+       month={June}
+}
